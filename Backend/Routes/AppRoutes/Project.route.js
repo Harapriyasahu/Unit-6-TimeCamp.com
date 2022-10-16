@@ -28,19 +28,22 @@ ProjectController.patch('/:projectid/edit',async(req,res)=>{
         return res.status(200).send({message : "project updated successfully", newProject});
 
     }else{
-        return res.status(401).send("you are not authorised to update project")
+        return res.status(401).send({message:"you are not authorised to update this project"})
     }
 })
 
-ProjectController.delete('/',async(req,res)=>{
-    const {project_id, user_id} = req.body;
+ProjectController.delete('/:taskId',async(req,res)=>{
+    const { user_id} = req.body;
+    console.log(req.params);
+    const project_id = req.params.taskId
+    console.log(req.body)
     const project = await ProjectModel.find({project_id});
     if(project.user_id===user_id){
         await ProjectModel.findByIdAndDelete({_id : project_id});
         return res.status(200).send({message : "project deleted successfully"});
 
     }else{
-        return res.status(401).send("you are not authorised to update project")
+        return res.status(401).send("you are not authorised to delete this project")
     }
 });
 

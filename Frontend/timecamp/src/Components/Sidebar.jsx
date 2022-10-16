@@ -360,7 +360,7 @@ const Sidebar = () => {
           >
             <BsTags className={styles.common_btn_sb_svg}/>
             <Text {...(open ? { display: "flex" } : { display: "none" })}>
-              Tags
+             <Link to="/tags"> Tags</Link>
             </Text>
           </Button>
         </Box>

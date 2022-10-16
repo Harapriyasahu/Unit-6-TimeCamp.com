@@ -78,8 +78,8 @@ const Basicsub = () => {
         <Flex style={{justifyContent:"space-between",marginTop:"1vw",fontSize:"16px"}}> <Text>Plan:</Text><Text>Basic</Text></Flex>
         <Flex style={{justifyContent:"space-between",marginTop:"1vw",fontSize:"16px"}}> <Text>Billing cycle:</Text><RadioGroup onChange={setValue} value={value}>
       <Stack direction='row'>
-        <Radio value='1' colorScheme='green'>Annual</Radio><Button style={{backgroundColor:"#ffa500",color:"white"}}>10% off</Button>
-        <Radio value='2' colorScheme='green'>Monthly</Radio>
+        <Radio value='annual' colorScheme='green'>Annual</Radio><Button style={{backgroundColor:"#ffa500",color:"white"}}>10% off</Button>
+        <Radio value='monthly' colorScheme='green'>Monthly</Radio>
       
       </Stack>
     </RadioGroup></Flex>

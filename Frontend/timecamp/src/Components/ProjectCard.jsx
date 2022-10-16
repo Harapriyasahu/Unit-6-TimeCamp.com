@@ -21,11 +21,11 @@ const ProjectCard = (props) => {
 
     try {
       let response = await axios.delete(
-        "https://blooming-sea-03900.herokuapp.com/project/task",
-        payload,
+        `https://blooming-sea-03900.herokuapp.com/project/task`,
+         payload,
         {
           headers: {
-            authorization: `${localStorage.getItem("TimeCampToken")}`,
+            Authorization: `${localStorage.getItem("TimeCampToken")}`,
           },
         }
       );

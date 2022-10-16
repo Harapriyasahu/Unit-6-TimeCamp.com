@@ -10,7 +10,12 @@ const TimeController  = require('./Routes/AppRoutes/Time.route')
 
 
 const app = express();
-app.use(cors())
+// app.use(cors())
+var corsOptions = {
+    origin: 'http://localhost:3000',
+    optionsSuccessStatus: 200 // For legacy browser support
+    }
+    app.use(cors(corsOptions));
 app.use(express.json());
 
 

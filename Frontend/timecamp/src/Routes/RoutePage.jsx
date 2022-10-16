@@ -19,6 +19,7 @@ import Basic from "../Pages/Basic";
 import Pro from "../Pages/Pro"
 import Custom from "../Pages/Custom";
 import { Report } from "../Pages/Report";
+import Tags from "../Pages/Tags";
 
 
 
@@ -35,16 +36,17 @@ const RoutePage = () => {
         <Route path="/project/task/:taskId/edit" element={<TaskEdit />} />
         <Route path="/timesheet" element={<TimeSheet />} />
         <Route path="/billing" element={<Billing />}/>
-          <Route path="/subscription" element={<Subcription />} />
-          <Route path="/custom" element={<Custom />} />
-          <Route path="/basic" element={<Basic />} />
-          <Route path="/pro" element={<Pro/>} />
-          <Route path="/report" element={<Report/>}/>
+        <Route path="/subscription" element={<Subcription />} />
+        <Route path="/custom" element={<Custom />} />
+        <Route path="/basic" element={<Basic />} />
+        <Route path="/pro" element={<Pro/>} />
+        <Route path="/report" element={<Report/>}/>
         {/* </Route> */}
         <Route path="/register" element={<Signin />} />
         <Route path="/login" element={<Login />} />
         <Route path="/attendance" element={<Attendance/>}/>
         <Route path="/users" element={<Users/>}/>
+        <Route path="/tags" element={<Tags/>}/>
       </Routes>
     </>
   );

@@ -63,7 +63,7 @@ const GP = styled.p`
   text-align: left;
 `;
 const H2 = styled.h2`
-  padding-right: 2rem !important;
+  padding-right: 2rem ;
   text-align: left;
   font-size: 48px;
   font-weight: 700;
@@ -104,7 +104,7 @@ const Card = styled.div`
 const H3 = styled.h3`
   padding: 0;
   text-align: left;
-  margin-bottom: 0 !important;
+  margin-bottom: 0 ;
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.1;
@@ -128,7 +128,7 @@ const H3 = styled.h3`
 `;
 
 const CardBody = styled.div`
-  margin: 0 !important;
+  margin: 0 ;
   padding: 1rem 0 0;
   flex: 1 1 auto;
   background-color: #f3f3f3;
@@ -138,14 +138,14 @@ const CardBody = styled.div`
     margin-bottom: 1rem;
   }
 `;
-const XYZ = styled.div`
+const InsideCard = styled.div`
   border-bottom: 0;
   background-color: #f3f3f3;
   padding: 0;
   & h3 {
     padding: 0;
     text-align: left;
-    margin-bottom: 0 !important;
+    margin-bottom: 0 ;
     letter-spacing: 0;
     cursor: default;
     font-family: lato, sans-serif;
@@ -214,19 +214,19 @@ export const Fields = () => {
                   </Card>
 
                   <Card>
-                    <XYZ>
+                    <InsideCard>
                       <h3>
                         <button>Try our easy-to-use desktop app</button>
                       </h3>
-                    </XYZ>
+                    </InsideCard>
                   </Card>
 
                   <Card>
-                    <XYZ>
+                    <InsideCard>
                       <h3>
                         <button>Track your activities automatically</button>
                       </h3>
-                    </XYZ>
+                    </InsideCard>
                   </Card>
                 </Content>
                 <GreenBtn><Link to="/project/task">Track employees time</Link></GreenBtn>
@@ -235,7 +235,7 @@ export const Fields = () => {
             <ImgDiv>
               <img
                 src="https://cdn-m.timecamp.com/img/greenbranding/features/img-home-features.png"
-                alt=""
+                alt="Project Timer"
               />
             </ImgDiv>
           </Row>
@@ -243,7 +243,7 @@ export const Fields = () => {
             <ImgDiv>
               <img
                 src="https://cdn-m.timecamp.com/img/greenbranding/features/reporting-features.png"
-                alt=""
+                alt="Project Timer"
               />
             </ImgDiv>
             <TextDiv>
@@ -274,23 +274,23 @@ export const Fields = () => {
                   </Card>
 
                   <Card>
-                    <XYZ>
+                    <InsideCard>
                       <h3>
                         <button>
                           Integrate with other tools for better performance
                         </button>
                       </h3>
-                    </XYZ>
+                    </InsideCard>
                   </Card>
 
                   <Card>
-                    <XYZ>
+                    <InsideCard>
                       <h3>
                         <button>
                           Take advantage of a simple, accurate budgeting
                         </button>
                       </h3>
-                    </XYZ>
+                    </InsideCard>
                   </Card>
                 </Content>
                 <GreenBtn><Link to="/project/task">Increase team productivity</Link></GreenBtn>
@@ -323,23 +323,23 @@ export const Fields = () => {
                   </Card>
 
                   <Card>
-                    <XYZ>
+                    <InsideCard>
                       <h3>
                         <button>
                           Achieve full compliance with data regulations
                         </button>
                       </h3>
-                    </XYZ>
+                    </InsideCard>
                   </Card>
 
                   <Card>
-                    <XYZ>
+                    <InsideCard>
                       <h3>
                         <button>
                           Get help from our Customer Success Manager
                         </button>
                       </h3>
-                    </XYZ>
+                    </InsideCard>
                   </Card>
                 </Content>
                 <GreenBtn ><Link to="project/task">Contact for customized solution</Link></GreenBtn>
@@ -348,7 +348,7 @@ export const Fields = () => {
             <ImgDiv>
               <img
                 src="https://cdn-m.timecamp.com/img/greenbranding/features/project-structure.png"
-                alt=""
+                alt="Project Timer"
               />
             </ImgDiv>
           </Row>
@@ -356,7 +356,7 @@ export const Fields = () => {
             <ImgDiv>
               <img
                 src="https://cdn-m.timecamp.com/img/greenbranding/features/attendance-features.png"
-                alt=""
+                alt="Project Timer"
               />
             </ImgDiv>
             <TextDiv>
@@ -386,21 +386,21 @@ export const Fields = () => {
                   </Card>
 
                   <Card>
-                    <XYZ>
+                    <InsideCard>
                       <h3>
                         <button>Check and approve employees Timesheets</button>
                       </h3>
-                    </XYZ>
+                    </InsideCard>
                   </Card>
 
                   <Card>
-                    <XYZ>
+                    <InsideCard>
                       <h3>
                         <button>
                           Integrate with payroll tools to work faster
                         </button>
                       </h3>
-                    </XYZ>
+                    </InsideCard>
                   </Card>
                 </Content>
                 <GreenBtn ><Link to="project/task">Make HR's work easier</Link></GreenBtn>

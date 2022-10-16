@@ -36,8 +36,8 @@ GoogleController.get(
     const UserId = req.user._id;
     const token = jwt.sign({email, UserId}, process.env.SECRET_KEY)
     console.log('token:', token)
-    localStorage.setItem("googleToken", token);
-    console.log('localStorage:', localStorage.getItem("googleToken", token))
+    // localStorage.setItem("googleToken", token);
+    // console.log('localStorage:', localStorage.getItem("googleToken", token))
     res.redirect("https://timecamp-nu.vercel.app/project")
   }
 );

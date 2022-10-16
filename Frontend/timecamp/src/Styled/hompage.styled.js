@@ -275,7 +275,7 @@ export const BookDemo = styled.div`
     }
     &>a{
       text-decoration: none;
-      color: #25cf60!important;
+      color: #25cf60;
       cursor: pointer;
       font-weight: 700;
     }
